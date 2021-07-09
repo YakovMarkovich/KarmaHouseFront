@@ -1,0 +1,70 @@
+body {
+    background-color: #3daef9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.house {
+    width: 40%;
+    height: 40%;
+    background: transparent 0% 0% no-repeat padding-box;
+    border: none;
+    opacity: 1;
+    z-index: -1;
+}
+
+.galochka {
+    width: 10%;
+    height: 20%;
+    z-index: 9999;
+    background: transparent  0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-left: -10%;
+    margin-top: 25%;
+}
+
+.name {
+    color: whitesmoke;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.appimages{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 38%;
+}
+
+span{
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        margin-top: 40%;
+    }
+
+    .house{
+        width: 50%;
+        margin-left: 5%;
+    }
+
+    .galochka{
+        width: 20%;
+        margin-left: -20%;
+        margin-top: 30%;
+    }
+
+    .appimages{
+        margin-left: 30%;
+    }
+}
