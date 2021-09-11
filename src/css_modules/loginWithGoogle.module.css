@@ -1,0 +1,58 @@
+body {
+    background-color: #3daef9;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*margin-top: 900px;*/
+}
+
+.name {
+    font-family: 'Roboto-Bold', 'Roboto Bold', 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.googleIcon{
+    width: 30%;
+    height: 30%;
+    color: white;
+}
+.image {
+    width: 81px;
+    height: 81px;
+    margin-right: 250px;
+    /*margin-right: 100%;*/
+    /*margin-left: 0px;*/
+    margin-top: 40px;
+}
+
+.btnGoogle{
+    width: 56px;
+    height:35px;
+    border-radius: 4px;
+    background:  #db3236;
+    /*color:white;*/
+    /*border:0px transparent;*/
+    /*text-align: center;*/
+    /*margin:5px;*/
+    /*display: inline-block;*/
+}
+
+@media screen and (max-width: 768px) {
+    .name{
+        margin-top: 15%;
+        font-size: 20px;
+    }
+    .image{
+        /*margin-right: auto;*/
+    }
+}
