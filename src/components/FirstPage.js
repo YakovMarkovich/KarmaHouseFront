@@ -1,14 +1,24 @@
-import React from 'react';
+import {React, useState} from 'react';
 import style from "../css_modules/firstpage.module.css"
-import house from "../Images/house-icon.png"
+import house from "../Images/houseandvi.png"
 import galka from "../Images/galka.png"
 import {BarLoader} from 'react-spinners'
+import LoginWithGoogle from "./LoginWithGoogle";
+import {Redirect} from "react-router-dom";
+
 
 const FirstPage = () => {
+    let[loginPage, setLoginPage] = useState(false);
+
+    function goToLoginPage() {
+        setLoginPage(true);
+    }
+
     return (
-        <div className="container-fluid">
-            <div className={style.appimages}>
-                <img className={`col-sm-12 ml-5  ${style.house}`} src='https://d1icd6shlvmxi6.cloudfront.net/gsc/6EYT19/0d/ef/3a/0def3ab8261b46939af4b92b84f5b782/images/mobile/u303.png?token=ef108c4d51c3bf8a67538996c3795031fda7cf2a96054e42793eca5f5507319e' alt="house"/>
+        loginPage ? <LoginWithGoogle/> :
+        <div className="container-fluid justify-content-center">
+            <div className={style.app}>
+                <img className={`col-sm-12  ${style.house}`} src={house} alt="house" onClick={goToLoginPage}/>
                 {/*<img className={`col-sm-12 ml-5 ${style.galochka}`} src={galka} alt="galochka"/>*/}
             </div>
             {/* <div className="d-flex, align-items-center, justify-content-center col-12">*/}
@@ -17,8 +27,8 @@ const FirstPage = () => {
                 <p className={`${style.name}`}>Karma Home</p>
             </div>
             <div className={style.app}>
-                <span className="sr-only mb-5">Loading...</span>
-                <BarLoader color={"orange"} loading/>
+                <span className="sr-only mt-2 mb-5">Loading...</span><br/>
+                <BarLoader width={"200px"} color={"orange"}  loading/>
             </div>
 
         </div>

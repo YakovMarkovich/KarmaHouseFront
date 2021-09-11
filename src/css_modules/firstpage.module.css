@@ -3,32 +3,26 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
 
 .house {
     width: 40%;
     height: 40%;
-    background: transparent 0% 0% no-repeat padding-box;
-    border: none;
-    opacity: 1;
-    z-index: -1;
-}
-
-.galochka {
-    width: 10%;
-    height: 20%;
-    z-index: 9999;
-    background: transparent  0% 0% no-repeat padding-box;
-    opacity: 1;
-    margin-left: -10%;
-    margin-top: 25%;
+    margin-left: 5%;
 }
 
 .name {
-    color: whitesmoke;
-    font-size: 2.5em;
-    font-weight: bold;
+    font-family: 'Roboto-Bold', 'Roboto Bold', 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 10%;
 }
+
 
 .app{
     display: flex;
@@ -50,21 +44,17 @@ span{
 
 @media screen and (max-width: 768px) {
     body{
-        margin-top: 40%;
+        margin-top: 18%;
     }
 
     .house{
-        width: 50%;
+        width: 163px;
+        height: 163px;
         margin-left: 5%;
     }
 
-    .galochka{
-        width: 20%;
-        margin-left: -20%;
-        margin-top: 30%;
+    .name {
+        margin-top: 40%;
     }
 
-    .appimages{
-        margin-left: 30%;
-    }
 }
